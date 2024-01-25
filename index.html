@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title" class="head">Survey Form</h1>  
+    <p id="description" class="head">This is a short description about the survey.</p>
+    <fieldset>
+      <form id="survey-form" method="post">
+        <label id="name-label" for="name">Full name: <input id="name" type="text" placeholder="Enter your full name" required></label>
+        <label id="email-label" for="email">E-mail address: <input id="email" type="email" placeholder="Enter your e-mail address" required></label>
+        <label id="number-label" for="number">Age: <input id="number" type="number" min="18" max="120" placeholder="Enter your age"></label>
+        <label id="dropdown-label" for="dropdown">Role: 
+          <select id="dropdown" name="role">
+            <option value="0" selected>-Select current role-</option>
+            <option value="1">Student</option>
+            <option value="2">Full Time Job</option>
+            <option value="3">Learner</option>
+            <option value="4">Prefer Not To Say</option>
+            <option value="5">Other</option>
+          </select>
+        </label>
+        <p>Would you recommend freeCodeCamp to a friend?</p>
+        <label for="def"><input id="def" type="radio" name="feedback" value="1" class="inline"> Definitely</label>
+        <label for="maybe"><input id="maybe" type="radio" name="feedback" value="2" class="inline"> Maybe</label>
+        <label for="ns"><input id="ns" type="radio" name="feedback" value="3" class="inline"> Not sure</label>
+        <p>Which areas are you most interested in?</p>
+        <label for="front-end"><input id="front-end" type="checkbox" value="front-end" class="inline"> Front-End</label>
+        <label for="back-end"><input id="back-end" type="checkbox" value="back-end" class="inline"> Back-End</label>
+        <label for="data-visualization"><input id="data-visualization" type="checkbox" value="data-visualization" class="inline"> Data Visualization</label>
+        <label for="notes">
+          <p>Any comments or suggestions?</p>
+          <textarea id="notes" name="notes" rows="4" cols="50" placeholder="Enter your comments here..."></textarea>
+        </label>
+        <input id="submit" type="submit">
+      </form>
+    </fieldset>
+  </body>
+</html>
